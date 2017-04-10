@@ -1,16 +1,17 @@
 class Cuboid(object):
     def __init__(self, height, length, width):
-        self.height = height
-        self.length = length
-        self.width = width
+        self.height = int(height)
+        self.length = int(length)
+        self.width = int(width)
 
     def get_surface(self):
         surface = 2 * (self.length * self.width + self.width * self.height + self.height * self.length)
         return surface
 
     def get_volume(self):
-        volume = int(self.height) * int(self.length) * int(self.width)
+        volume = self.height * self.length * self.width
         return volume
+        
     # Create a class that represents a cuboid:
     # It should take its three dimensions as constructor parameters (numbers)
     # It should have a method called `get_surface` that returns the cuboid's surface

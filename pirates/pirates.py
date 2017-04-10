@@ -10,6 +10,7 @@ pirates = [
 # And returns a list of names containing the pirates that
 # - have wooden leg and
 # - have more than 15 gold
+
 def rich_and_has_wood_leg_name(pirates):
     name = []
     for pirate in pirates:
